@@ -1,0 +1,296 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    float: left;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #d60e68;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.background {
+    background-color: #d60e68;
+    background-attachment:fixed;
+    padding: 2px;
+}
+
+.navigation{
+    margin-bottom: 50px;
+}
+
+.conteudo {
+    line-height: 3rem;
+    width: 72%;
+    max-width: 940px;
+    margin: auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 50px;
+    margin-bottom: 120px;
+    padding: 60px;
+    box-shadow: -10px 8px 30px #312f2f;
+    z-index: 2;
+}
+
+ul.experiencia{
+    padding-left: 26px;
+}
+
+
+.cabecalho {
+    width: 72%;
+    text-align: center;
+    color: #fff;
+    margin: 100px auto;
+    padding: 30px;
+
+}
+
+p > a{
+    text-decoration: none;
+    color: white
+}
+
+.logo img {
+    width: 290px;
+}
+
+.navigation ul{
+ overflow: hidden;
+ overflow: hidden;
+ text-align: center;
+ background-color: black;
+ border-radius: 31px;
+    
+}
+
+.navigation li{
+    display: inline-block;
+    width: 150px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    
+}
+
+.navigation li a:link,
+.navigation li a:visited{
+   color: white;
+   text-decoration: none;
+}
+
+.navigation li a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.navigation li a:active {
+    color: gray;
+}
+.conteudo .avatar{
+    
+    float: left;
+    width:270px;
+    height:270px;
+    margin-right: 10px;
+}
+
+.fonte--media {
+    font-size: 1.9rem;
+}
+
+.titulo {
+    font-size: 2.1rem;
+    margin-top: 50px;
+}
+
+.titulo--fonte{
+    font-weight: 700;
+}
+
+/* .fotos{
+    column-count: 4;
+} */
+
+.fotos img{
+    border-radius: 8px;
+    filter: grayscale(0.4);
+    width: 448px;
+    height: 240px;
+    object-fit: cover;
+    margin-right: 18px;
+    margin-top: 4px;
+   
+}
+
+.fotos img:hover{
+    filter: none;
+}
+
+.habilidades label {
+    display: inline-block;
+    width: 260px;
+}
+
+.habilidades progress {
+    accent-color: #2d2e4c ;
+}
+
+.btn-inicio{
+    font-size: 3rem;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.3;
+}
+
+.btn-inicio:hover{
+    opacity: 1;
+}
+
+.footer{
+    position: relative;
+    padding: 120px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    /* margin-top: 100px; */
+}
+
+.footer h4{
+    margin-bottom: 40px;
+    
+}
+
+.logotipo {
+    color: #2d2e4c;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 1.8rem;
+    padding-top: 10px;
+    z-index: 1;
+
+}
+
+.logomarca.fundo {
+    background-color: #fff;
+    width: 100px;
+    height: 100px; 
+    float: right;
+    margin-right: 50%;
+    margin-top: -50px;
+    transform: translateX(50%) rotate(45deg);
+
+}
+
+.color-opacity-text {
+    opacity: 0.6;
+}
+
+.text-size-header{
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+@media (max-width: 720px){
+    body {
+        position: relative;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .avatar {
+        width: 110px;
+    }
+
+
+    .fonte--media {
+        font-size: 1.1rem;
+        line-height: 25px;
+    }
+
+    .navigation li {
+        width: 32%;
+        font-size: 2rem;
+        display: inline-block;
+    }
+    .fotos img{
+        border-radius: 8px;
+        filter: grayscale(0.4);
+        width: 72%;
+        height: 72%;
+        object-fit: cover;
+        margin-right: 18px;
+        margin-top: 4px;
+       
+    }
+
+    .conteudo{
+        width: 68%;
+    }
+
+    .text-size-header {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    .footer{
+        position: relative;
+        padding: 41px;
+        background-color: #1b1a2f;
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    
+}
+
